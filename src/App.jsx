@@ -16,8 +16,8 @@ function App() {
             <Photos props={{
                 title: 'city photos',
                 images: [
-                    {src: 'src/assets/IMG1.png', alt: 'img1'},
-                    {src: 'src/assets/IMG1.jpg', alt: 'img2'}
+                    {src: './src/assets/IMG1.png', alt: 'img1'},
+                    {src: './src/assets/IMG1.jpg', alt: 'img2'}
                 ]
             }} />
 
