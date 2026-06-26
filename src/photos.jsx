@@ -7,7 +7,7 @@ function Photos({props}) {
                     key={index}
                     src={image.src}
                     alt={image.alt}
-                    style={{height: '200px', objectFit: 'cover'}}
+                    style={{height: '300px', width: '300px', objectFit: 'cover', borderRadius: '10px'}}
                 />
             ))}
         </>

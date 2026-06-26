@@ -1,33 +1,28 @@
 import './App.css'
 import Header from './header.jsx'
 import Photos from './photos.jsx'
-import Facts from './facts.jsx'
+import Contact from './contact.jsx'
 import ReactDOM from 'react-dom/client'
 
 function App() {
     return (
         <>
             <Header props={{
-                title: 'veseli nad moravou',
-                country: 'czechia',
-                founded: 'approx. 5700–4900 BC'
+                fullName: 'name lastname',
+                title: 'the cook'
             }} />
 
             <Photos props={{
-                title: 'city photos',
+                title: 'Photo',
                 images: [
-                    {src: './src/assets/IMG1.png', alt: 'img1'},
-                    {src: './src/assets/IMG1.jpg', alt: 'img2'}
+                    {src: './src/assets/cat.png', alt: 'face-photo'}
                 ]
             }} />
 
-            <Facts props={{
-                title: 'fun facts',
-                facts: [
-                    'The town is situated on the Morava River, a Part of the Baťa Canal runs along the river.',
-                    'The first written mention of Veselí is from 1261, when a water castle with a settlement existed here.',
-                    "In the Thirty Years' War, Veselí and Předměstí Veselí were burned down several times, and the castle was looted."
-                ]
+            <Contact props={{
+                title: 'contact info',
+                phone: '+380 73 234 55 55',
+                email: 'random@email.com'
             }} />
         </>
     )
