@@ -1,13 +1,14 @@
-function Contact({props}) {
+function Contact({ props }) {
     return (
-        <>
+        <section>
             <h2>{props.title}</h2>
-            <div>
-                <p>phone: <a href={`tel:${props.phone}`}>{props.phone}</a></p>
-                <p>email: <a href={`mailto:${props.email}`}>{props.email}</a></p>
-            </div>
-        </>
-    )
+            <ol>
+                {props.steps.map((step, index) => (
+                    <li key={index}>{step}</li>
+                ))}
+            </ol>
+        </section>
+    );
 }
 
-export default Contact
+export default Contact;
